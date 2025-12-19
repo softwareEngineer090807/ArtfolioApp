@@ -1,0 +1,12 @@
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\viewmodel\ArtViewModel.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\data\ArtDao.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\SplashActivity.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\adapter\ArtAdapter.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\data\AppDatabase.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\build\generated\source\navigation-args\debug\com\example\artfolio\ui\FullScreenFragmentArgs.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\MainActivity.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\ui\AboutFragment.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\build\generated\source\navigation-args\debug\com\example\artfolio\ui\HomeFragmentDirections.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\model\ArtItem.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\ui\HomeFragment.kt
+C:\Users\DELL\AndroidStudioProjects\Artfolio_Complete_Project\app\src\main\java\com\example\artfolio\ui\FullScreenFragment.kt
