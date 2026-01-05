@@ -3,10 +3,12 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
 }
+
 android {
     namespace "com.example.artfolio"
-    compileSdk 36   // ✅ FIXED (valid SDK)
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.artfolio"
@@ -14,6 +16,7 @@ android {
         targetSdk 34
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildFeatures {
@@ -30,25 +33,27 @@ android {
     }
 }
 
-
-
 dependencies {
-    implementation 'androidx.core:core-ktx:1.17.0'
-    implementation 'androidx.appcompat:appcompat:1.7.1'
-    implementation 'com.google.android.material:material:1.13.0'
-    implementation 'androidx.recyclerview:recyclerview:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     // Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:2.9.6"
-    implementation "androidx.navigation:navigation-ui-ktx:2.9.6"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.7.7"
+    implementation "androidx.navigation:navigation-ui-ktx:2.7.7"
 
-    // Room
-    implementation "androidx.room:room-runtime:2.8.4"
-    implementation "androidx.room:room-ktx:2.8.4"
-    kapt "androidx.room:room-compiler:2.8.4"
+    // ✅ FIXED: Using only the version that supports Kotlin 2.1
+    def room_version = "2.7.0-alpha01"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
 
-    // Glide
+    // Glide for image loading
     implementation 'com.github.bumptech.glide:glide:4.16.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    kapt 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // Standard Lib
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.1.20"
 }
