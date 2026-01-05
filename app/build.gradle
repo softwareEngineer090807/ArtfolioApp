@@ -3,25 +3,40 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs.kotlin'
+<<<<<<< HEAD
     id 'kotlin-parcelize'
 }
 
 android {
     namespace "com.example.artfolio"
+=======
+}
+
+android {
+    namespace 'com.example.artfolio'
+>>>>>>> fba88c0bfa0230ac5dba960a02be67a11c869767
     compileSdk 34
 
     defaultConfig {
         applicationId "com.example.artfolio"
+<<<<<<< HEAD
         minSdk 23
         targetSdk 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+=======
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+>>>>>>> fba88c0bfa0230ac5dba960a02be67a11c869767
     }
 
     buildFeatures {
         viewBinding true
     }
+<<<<<<< HEAD
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -31,6 +46,8 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+=======
+>>>>>>> fba88c0bfa0230ac5dba960a02be67a11c869767
 }
 
 dependencies {
@@ -44,6 +61,7 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:2.7.7"
     implementation "androidx.navigation:navigation-ui-ktx:2.7.7"
 
+<<<<<<< HEAD
     // ✅ FIXED: Using only the version that supports Kotlin 2.1
     def room_version = "2.7.0-alpha01"
     implementation "androidx.room:room-runtime:$room_version"
@@ -57,3 +75,14 @@ dependencies {
     // Standard Lib
     implementation "org.jetbrains.kotlin:kotlin-stdlib:2.1.20"
 }
+=======
+    // Room
+    implementation "androidx.room:room-runtime:2.6.1"
+    implementation "androidx.room:room-ktx:2.6.1"
+    kapt "androidx.room:room-compiler:2.6.1"
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+}
+>>>>>>> fba88c0bfa0230ac5dba960a02be67a11c869767

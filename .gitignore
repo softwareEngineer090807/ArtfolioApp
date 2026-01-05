@@ -13,6 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+<<<<<<< HEAD
 
 # Built application files
 *.apk
@@ -99,3 +100,5 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+=======
+>>>>>>> fba88c0bfa0230ac5dba960a02be67a11c869767
